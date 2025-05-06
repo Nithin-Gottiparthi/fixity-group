@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import FixityGroupImage from '../assets/images/Fixity Group.jpg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +18,9 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="font-bold text-2xl text-fixity-primary">
             <img
-              src={FixityGroupImage}
+              src="/images/Fixity Group.jpg"
               alt="Fixity Group"
-              style={{ width: "80px", height: "55px" }}
+              style={{ width: "85px", height: "55px" }}
 
             />
             {/* FIXITY <span className="text-fixity-secondary">GROUP</span> */}
@@ -72,7 +71,7 @@ const NavLinks = ({ className }: NavLinksProps) => (
       About Us
     </Link>
     <Link to="/subsidiaries" className="hover:text-fixity-secondary transition-colors">
-      Subsidiaries
+      Our Subsidiaries
     </Link>
   </div>
 );

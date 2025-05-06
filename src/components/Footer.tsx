@@ -10,10 +10,16 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold">
-              FIXITY <span className="text-fixity-secondary">GROUP</span>
+              {/* FIXITY <span className="text-fixity-secondary">GROUP</span> */}
+              <img
+                src= "/images/fixity-group-lyt.png"
+                alt="Fixity Group"
+                style={{ width: "90px", height: "60px" }}
+
+              />
             </h3>
             <p className="text-gray-300 max-w-xs">
-              Unifying excellence across technology, education, healthcare, 
+              Unifying excellence across technology, education, healthcare,
               and sustainability sectors.
             </p>
             <div className="flex space-x-4">

@@ -66,13 +66,13 @@ const Index = () => {
                   Bringing Together Excellence Under One Vision
                 </h2>
                 <p className="text-gray-600">
-                  Fixity Group is the parent organization that unites six diverse yet complementary companies across technology, 
-                  education, healthcare, and sustainability sectors. Our mission is to drive innovation and excellence 
+                  Fixity Group is the parent organization that unites six diverse yet complementary companies across technology,
+                  education, healthcare, and sustainability sectors. Our mission is to drive innovation and excellence
                   in each industry while fostering collaboration among our subsidiaries.
                 </p>
                 <p className="text-gray-600">
-                  With a strong commitment to quality, innovation, and social responsibility, 
-                  Fixity Group companies are leaders in their respective fields, contributing to 
+                  With a strong commitment to quality, innovation, and social responsibility,
+                  Fixity Group companies are leaders in their respective fields, contributing to
                   a better future through cutting-edge solutions and services.
                 </p>
                 <Button asChild className="bg-fixity-primary hover:bg-fixity-primary/90">
@@ -83,10 +83,11 @@ const Index = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl flex items-center justify-center">
-                <img
-                    src= "/images/Fixity Group.jpg"
+                  <img
+                    src="/images/Fixity Group.jpg"
                     alt="Fixity Group"
                     className="object-cover w-full h-full"
+                    style={{ width: "100%", height: "100%"}}
                   />
                 </div>
               </div>
@@ -102,7 +103,7 @@ const Index = () => {
                 Our Family of Companies
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Discover our diverse portfolio of businesses, each contributing unique expertise 
+                Discover our diverse portfolio of businesses, each contributing unique expertise
                 and solutions in their respective industries.
               </p>
             </div>
@@ -130,41 +131,46 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-full md:w-1/2">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="aspect-square bg-fixity-tech/20 rounded-lg"></div>
-                  <div className="aspect-square bg-fixity-edx/20 rounded-lg"></div>
-                  <div className="aspect-square bg-fixity-learnpad/20 rounded-lg"></div>
-                  <div className="aspect-square bg-fixity-green/20 rounded-lg"></div>
+                <div className="aspect-square bg-fixity-tech/10 rounded-lg flex items-center justify-center">
+                  <img
+                    src="/images/ceo.png"
+                    alt="Ceo image"
+                    style={{ borderRadius: 10 }}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="w-full md:w-1/2 space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-fixity-primary">
-                  Who We Are
+                  CEO's Message
                 </h2>
                 <p className="text-gray-600">
-                  At Fixity Group, we believe in the power of collaboration and excellence. 
-                  Our diverse portfolio of companies shares a common purpose: to innovate, elevate standards, 
+                  At Fixity Group, we believe in the power of collaboration and excellence.
+                  Our diverse portfolio of companies shares a common purpose: to innovate, elevate standards,
                   and create meaningful impact in their respective industries.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <h3 className="text-xl font-bold text-fixity-primary">Our Mission</h3>
-                    <p className="text-gray-600">To unite diverse expertise under one vision, delivering exceptional value and driving positive change.</p>
+                    <p className="text-gray-600">
+                      To unite diverse expertise under one vision, delivering exceptional value and driving positive change.
+                    </p>
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-bold text-fixity-primary">Our Vision</h3>
-                    <p className="text-gray-600">To be a global leader in creating innovative solutions that improve lives and transform industries.</p>
+                    <p className="text-gray-600">
+                      To be a global leader in creating innovative solutions that improve lives and transform industries.
+                    </p>
                   </div>
                 </div>
                 <Button asChild className="bg-fixity-primary hover:bg-fixity-primary/90">
-                  <Link to="/about">
-                    More About Us
-                  </Link>
+                  <Link to="/about">More About Us</Link>
                 </Button>
               </div>
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </div>
