@@ -250,7 +250,7 @@ const Subsidiaries = () => {
                     
                     {/* Right column with image */}
                     <div className="lg:w-1/3">
-                      <div className={`bg-fixity-${subsidiary.color}/10 p-6 rounded-xl h-full`}>
+                      {/* <div className={`bg-fixity-${subsidiary.color}/10 p-6 rounded-xl h-full`}> */}
                         <div className={`aspect-square bg-fixity-${subsidiary.color}/20 rounded-lg mb-6 flex items-center justify-center`}>
                           <span className={`text-5xl font-bold text-fixity-${subsidiary.color}/30`}>
                             {subsidiary.name.charAt(0)}
@@ -265,7 +265,7 @@ const Subsidiaries = () => {
                             <a href="/contact">Contact {subsidiary.name}</a>
                           </Button>
                         </div>
-                      </div>
+                      {/* </div> */}
                     </div>
                   </div>
                 </TabsContent>
