@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import SubsidiaryCard, { SubsidiaryProps } from "@/components/SubsidiaryCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import FixityGroupImage from '../assets/images/Fixity Group.jpg';
 
 const subsidiaries: SubsidiaryProps[] = [
   {
@@ -12,42 +11,42 @@ const subsidiaries: SubsidiaryProps[] = [
     description: "Innovative technology solutions and IT services for businesses across industries.",
     color: "tech",
     website: "https://fixitytech.com",
-    logo: "src/assets/images/Fixity-Tech.jpg",
+    logo: "/images/Fixity-Tech.jpg",
   },
   {
     name: "Fixity EDX",
     description: "Digital education platform offering advanced learning experiences and resources.",
     color: "edx",
     website: "https://fixityedx.com",
-    logo: "src/assets/images/Fixityedx.jpg",
+    logo: "/images/Fixityedx.jpg",
   },
   {
     name: "Fixity Learnpad",
     description: "Interactive learning tools and platforms for students and educational institutions.",
     color: "learnpad",
     website: "https://fixitylearn.com",
-    logo: "src/assets/images/Fixity-Learn.jpg",
+    logo: "/images/Fixity-Learn.jpg",
   },
   {
     name: "Fixity Green",
     description: "Sustainable solutions and eco-friendly initiatives for a greener future.",
     color: "green",
     website: "https://fixitygreen.com",
-    logo: "src/assets/images/fixity-green.png",
+    logo: "/images/fixity-green.png",
   },
   {
     name: "Jayasree Liberty Hospitals",
     description: "State-of-the-art healthcare facilities providing quality medical services.",
     color: "hospital",
     website: "https://jslibertyhospitals.com",
-    logo: "src/assets/images/jayasree.jpg",
+    logo: "/images/jayasree.jpg",
   },
   {
     name: "Shri Dhanvantri Vidyapeetam",
     description: "Educational institution dedicated to traditional and modern learning methodologies.",
     color: "vidyapeetam",
     website: "#",
-    logo: "src/assets/images/shri-danvantri.jpeg",
+    logo: "/images/shri-danvantri.jpeg",
   },
 ];
 
@@ -85,7 +84,7 @@ const Index = () => {
               <div className="w-full md:w-1/2">
                 <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl flex items-center justify-center">
                 <img
-                    src={FixityGroupImage}
+                    src= "/images/Fixity Group.jpg"
                     alt="Fixity Group"
                     className="object-cover w-full h-full"
                   />
