@@ -21,7 +21,7 @@ const Navbar = () => {
             <img
               src="/images/Fixity Group.jpg"
               alt="Fixity Group"
-              className="h-14 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </div>
         </Link>
