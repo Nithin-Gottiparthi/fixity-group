@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -41,6 +42,21 @@ const SubsidiaryCard = ({
   const hoverColor =
     hoverColors[color as keyof typeof hoverColors] || '#f4af1b';
 
+  // Get website URL - redirect Shri Dhanvantri Vidyapeetam to dedicated page
+  const getWebsiteUrl = () => {
+    if (name === "Shri Dhanvantri Vidyapeetam") {
+      return "/shri-dhanvantri-vidyapeetam";
+    }
+    return website;
+  };
+
+  // Check if URL is internal
+  const isInternalUrl = (url: string) => {
+    return url.startsWith("/");
+  };
+
+  const websiteUrl = getWebsiteUrl();
+
   return (
     <Card
       className={`overflow-hidden transition-all duration-300 h-full flex flex-col group card-${color}`}
@@ -48,7 +64,6 @@ const SubsidiaryCard = ({
         transition: 'box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out',
       }}
     >
-      <div className={`h-2 bg-fixity-${color}`} />
 
       <CardHeader className="pb-2">
         <div className="flex items-start gap-4">
@@ -82,20 +97,29 @@ const SubsidiaryCard = ({
       </CardContent>
 
       <CardFooter className="pt-2 flex justify-between items-center">
-        <a
-          href={website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex items-center text-sm font-medium text-fixity-${color} hover:underline group-hover:text`}
-        >
-          Visit Website <ExternalLink className="ml-1 h-4 w-4" />
-        </a>
+        {isInternalUrl(websiteUrl) ? (
+          <a
+            href={websiteUrl}
+            className={`flex items-center text-sm font-medium text-fixity- hover:underline group-hover:text`}
+          >
+            Visit Website <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        ) : (
+          <a
+            href={websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center text-sm font-medium text-fixity-${color} hover:underline group-hover:text`}
+          >
+            Visit Website <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
+        )}
 
         <Button
           asChild
           size="sm"
           variant="outline"
-          className={`border-fixity-${color} text-fixity-${color} hover:bg-fixity-${color}/5 btn-hover-${color}`}
+          className={`border-fixity-${color} text-fixity- hover:bg-fixity-${color}/5 btn-hover-${color}`}
           style={{
             transition: 'all 0.3s ease',
           }}
@@ -107,7 +131,7 @@ const SubsidiaryCard = ({
       <style>{`
         .card-${color}:hover {
           box-shadow: 0 12px 28px -6px ${hoverColor}55;
-          transform: scale(1.04); /* 👈 Hover scale updated here */
+          transform: scale(1.04);
         }
 
         .btn-hover-${color}:hover {
