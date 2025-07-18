@@ -51,7 +51,7 @@ const subsidiaries = [
   },
   {
     id: "fixity-learnpad",
-    name: "Fixity Learnpad",
+    name: "Learning pad",
     color: "learnpad",
     shortDesc: "Interactive learning tools and platforms for students and educational institutions.",
     longDesc: "Fixity Learnpad specializes in interactive learning tools that make education more engaging and effective. Our tablet-based solutions and educational apps are designed for students of all ages, providing personalized learning experiences that adapt to individual needs and learning styles. We're committed to making quality education accessible and enjoyable.",
@@ -214,10 +214,10 @@ const Subsidiaries = () => {
                       key={subsidiary.id}
                       value={subsidiary.id}
                       className={`
-                        px-2 py-3 text-sm font-medium relative transition-all duration-300 ease-in-out
-                        min-h-[60px] flex flex-col hyphens-auto
-                        ${isActive ? `font-bold` : ''}
-                      `}
+                px-2 py-3 text-sm font-medium relative transition-all duration-300 ease-in-out
+                min-h-[60px] flex flex-col hyphens-auto
+                ${isActive ? `font-bold` : ''}
+              `}
                       style={{
                         borderBottom: isActive ? `2px solid ${activeColor}` : '2px solid transparent',
                         backgroundColor: isActive ? `${activeColor}10` : 'transparent',
@@ -246,10 +246,11 @@ const Subsidiaries = () => {
                         <h2 className={`text-3xl md:text-4xl font-bold mb-4 text-fixity-${subsidiary.color}`}>
                           {subsidiary.name}
                         </h2>
-                        <p className="text-gray-600 mb-6">
-                          {subsidiary.longDesc}
-                        </p>
-                        <Button asChild className={`bg-fixity-${subsidiary.color} hover:bg-fixity-${subsidiary.color}/90`}>
+                        <p className="text-gray-600 mb-6">{subsidiary.longDesc}</p>
+                        <Button
+                          asChild
+                          className={`bg-fixity-${subsidiary.color} hover:bg-fixity-${subsidiary.color}/90`}
+                        >
                           <a href={subsidiary.website} target="_blank" rel="noopener noreferrer">
                             Visit Website
                           </a>
@@ -262,7 +263,9 @@ const Subsidiaries = () => {
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           {subsidiary.features.map((feature, index) => (
                             <li key={index} className="flex items-start space-x-2">
-                              <span className={`w-1.5 h-1.5 bg-fixity-${subsidiary.color} rounded-full mt-2`} />
+                              <span
+                                className={`w-1.5 h-1.5 bg-fixity-${subsidiary.color} rounded-full mt-2`}
+                              />
                               <span className="text-gray-600">{feature}</span>
                             </li>
                           ))}
@@ -274,7 +277,10 @@ const Subsidiaries = () => {
                         <h3 className="text-xl font-bold text-fixity-primary mb-4">Success Stories</h3>
                         <div className="space-y-4">
                           {subsidiary.caseStudies.map((study, index) => (
-                            <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                            <div
+                              key={index}
+                              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-300 border border-gray-100"
+                            >
                               <p className="text-gray-600">{study}</p>
                             </div>
                           ))}
@@ -370,21 +376,30 @@ const Subsidiaries = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <SynergyCard
-                title="Cross-Industry Innovation"
-                description="Our companies collaborate across sectors to develop unique solutions that address complex challenges from multiple perspectives."
-              />
-              <SynergyCard
-                title="Shared Resources & Expertise"
-                description="Companies within the Fixity Group benefit from shared knowledge, technology infrastructure, and business support services."
-              />
-              <SynergyCard
-                title="Integrated Customer Solutions"
-                description="We provide comprehensive solutions by leveraging the combined strengths and capabilities of our diverse portfolio of companies."
-              />
+              <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
+                <h3 className="text-xl font-semibold text-fixity-primary mb-2">Cross-Industry Innovation</h3>
+                <p className="text-gray-600">
+                  Our companies collaborate across sectors to develop unique solutions that address complex challenges from multiple perspectives.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
+                <h3 className="text-xl font-semibold text-fixity-primary mb-2">Shared Resources & Expertise</h3>
+                <p className="text-gray-600">
+                  Companies within the Fixity Group benefit from shared knowledge, technology infrastructure, and business support services.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md transform transition duration-500 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]">
+                <h3 className="text-xl font-semibold text-fixity-primary mb-2">Integrated Customer Solutions</h3>
+                <p className="text-gray-600">
+                  We provide comprehensive solutions by leveraging the combined strengths and capabilities of our diverse portfolio of companies.
+                </p>
+              </div>
             </div>
           </div>
         </section>
+
 
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-fixity-primary text-white">

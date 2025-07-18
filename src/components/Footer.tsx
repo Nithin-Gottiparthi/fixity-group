@@ -12,7 +12,7 @@ import {
 const subsidiaryColors = {
   "Fixity Technologies": "#f4af1b", // tech
   "Fixity EDX": "#2c34a8", // edx
-  "Fixity Learnpad": "#FF6701", // learnpad
+  "Learning pad": "#FF6701", // learnpad
   "Fixity Green": "#69AF07", // green
   "Jayasree Liberty Hospitals": "#2e5dbf", // hospital
   "Shri Dhanvantri Vidyapeetam": "#FFA500", // vidyapeetam
@@ -74,7 +74,7 @@ const Footer = () => {
 
           {/* Subsidiaries */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Our Subsidiaries</h3>
+            <h3 className="text-lg font-semibold">Our Entities</h3>
             <div className="flex flex-col space-y-2">
               {Object.entries(subsidiaryColors).map(([name, color]) => (
                 <FooterLinkWithColor key={name} to="/subsidiaries" color={color}>
@@ -105,7 +105,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 hover:text-fixity-secondary transition-colors"
               >
                 <Phone className="w-5 h-5 text-fixity-secondary shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (630) 270 2250</span>
               </a>
 
               <a

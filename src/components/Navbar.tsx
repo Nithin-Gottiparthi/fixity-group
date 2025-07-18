@@ -89,7 +89,7 @@ const NavLinks = ({ className, currentPath }: NavLinksProps) => (
         currentPath === "/subsidiaries" && "text-fixity-secondary font-bold"
       )}
     >
-      Our Subsidiaries
+      Our Entities
     </Link>
   </div>
 );

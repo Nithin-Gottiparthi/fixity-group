@@ -80,7 +80,7 @@ const About = () => {
               <div className="w-full md:w-1/2">
                 <div className="aspect-square bg-fixity-tech/10 rounded-lg flex items-center justify-center">
                   <img
-                    src="/images/ceoa.png"
+                    src="/images/companies.png"
                     alt="companies image"
                     style={{ borderRadius: 10 }}
                     className="w-full h-full object-cover"
@@ -117,7 +117,7 @@ const About = () => {
         </section>
 
         {/* Leadership */}
-        <section className="py-16 md:py-20">
+        {/* <section className="py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-fixity-primary mb-4">Our Leadership</h2>
@@ -165,7 +165,7 @@ const About = () => {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Our Core Values (Updated Version) */}
         <section className="py-16 md:py-20 bg-fixity-primary text-white">
