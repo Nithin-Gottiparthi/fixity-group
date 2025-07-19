@@ -33,7 +33,7 @@ const subsidiaries = [
     name: "Fixity EDX",
     color: "edx",
     shortDesc: "Digital education platform offering advanced learning experiences and resources.",
-    longDesc: "Fixity EDX is transforming education through innovative digital learning platforms. Our comprehensive suite of educational technology solutions serves K-12 schools, universities, and corporate training programs. We combine cutting-edge technology with pedagogical expertise to create engaging, effective, and accessible learning experiences for all.",
+    longDesc: "Fixity EDX is transforming education through innovative digital learning platforms. Our comprehensive technology solutions serves Universities, and Corporate training programs. We combine cutting-edge technology with pedagogical expertise to create engaging, effective, and accessible learning experiences for all.",
     features: [
       "Interactive Learning Management System",
       "Virtual Classrooms & Collaboration Tools",
@@ -77,14 +77,14 @@ const subsidiaries = [
     shortDesc: "Sustainable solutions and eco-friendly initiatives for a greener future.",
     longDesc: "Fixity Green is dedicated to environmental sustainability through innovative green technology solutions. We develop and implement renewable energy systems, waste management solutions, and sustainable infrastructure projects. Our expert team works with businesses, governments, and communities to reduce environmental impact and create a more sustainable future.",
     features: [
-      "Renewable Energy Solutions",
+      "Plastic and E-waste Recycling",
       "Sustainable Waste Management",
       "Energy Efficiency Consulting",
       "Carbon Footprint Analysis",
       "Green Building Design & Certification"
     ],
     caseStudies: [
-      "Implemented solar energy solutions for business campus reducing energy costs by 45%",
+      "Implemented recycled 1600+ tonnes of plastic waste",
       "Designed waste management system for municipality reducing landfill waste by 60%",
       "Provided green building consultation for corporate headquarters achieving LEED Platinum certification"
     ],
@@ -96,7 +96,7 @@ const subsidiaries = [
     name: "Jayasree Liberty Hospitals",
     color: "hospital",
     shortDesc: "State-of-the-art healthcare facilities providing quality medical services.",
-    longDesc: "Jayasree Liberty Hospitals is committed to providing exceptional healthcare services with compassion and expertise. Our network of modern medical facilities offers comprehensive care across multiple specialties. With a patient-centered approach and investment in the latest medical technologies, we strive to improve healthcare outcomes and enhance the quality of life for our community.",
+    longDesc: "Our renowned expertise in Neurosurgery and Neurology, backed by advanced diagnostics and skilled professionals, ensures precision care for every patient. With a patient-first approach, we tailor each treatment to individual needs—because at Jaya Sree Liberty, every life matters. Our Impact: 75,000+ OPD patients cared for 12,000+ successful surgeries performed 14,000+ inpatients treated 1,000+ complex cases with a 98% success rate",
     features: [
       "State-of-the-art Medical Facilities",
       "Multi-specialty Healthcare Services",
@@ -117,7 +117,7 @@ const subsidiaries = [
     name: "Shri Dhanvantri Vidyapeetam",
     color: "vidyapeetam",
     shortDesc: "Educational institution dedicated to traditional and modern learning methodologies.",
-    longDesc: "Shri Dhanvantri Vidyapeetam is an educational institution that blends traditional wisdom with modern educational approaches. Specializing in healthcare education, particularly Ayurvedic medicine and holistic wellness, we provide comprehensive academic programs that prepare students for successful careers while preserving ancient knowledge systems. Our curriculum emphasizes both theoretical understanding and practical applications.",
+    longDesc: "Dhanvantri - We are establishing a world-class paramedical nursing college, set to launch in the coming year, with a clear vision: to nurture compassionate, competent, and job-ready nursing professionals. Our mission is to deliver high-quality education that combines academic excellence with immersive hands-on training, equipping students with the skills, knowledge, and confidence required in today's fast-evolving healthcare ecosystem. Through industry-aligned curriculum, real-world simulations, and role-based learning, we prepare our graduates to excel across hospitals, clinics, and community health settings. Strong ethical grounding and professional values are embedded into every aspect of our teaching. Whether you're passionate about patient care, clinical research, or public health, our programs are designed to empower you with a purposeful career and a meaningful impact.",
     features: [
       "Ayurvedic Medicine Programs",
       "Modern Healthcare Education",
