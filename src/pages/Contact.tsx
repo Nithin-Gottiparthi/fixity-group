@@ -16,7 +16,7 @@ const subsidiaryContacts = [
   {
     name: "Fixity EDX",
     color: "edx",
-    address: "125 S Clark Street, 17th Floor, Chicago, IL 60603 USA",
+    address: "1st floor, Legend Platinum, Jubilee Enclave, HITEC City, Kondapur, Telangana 500084",
     phone: "+91-8374448889",
     email: "contact@fixityedx.com",
     logo: "/images/Fixityedx.jpg",
@@ -48,9 +48,9 @@ const subsidiaryContacts = [
   {
     name: "Shri Dhanvantri Vidyapeetam",
     color: "vidyapeetam",
-    address: "2345 Education Lane, Chennai, Tamil Nadu 600001 India",
-    phone: "+91 (555) 678-9012",
-    email: "info@dhanvantri.edu",
+    address: "1st floor, Legend Platinum, Jubilee Enclave, HITEC City, Kondapur, Telangana 500084",
+    phone: "+91 (720) 710 7334",
+    email: "info@dhanvantrieducations.com",
     logo: "/images/shri-danvantri.jpeg",
   },
 ];
