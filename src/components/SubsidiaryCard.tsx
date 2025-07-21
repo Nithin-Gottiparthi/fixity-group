@@ -45,7 +45,7 @@ const SubsidiaryCard = ({
   // Get website URL - redirect Shri Dhanvantri Vidyapeetam to dedicated page
   const getWebsiteUrl = () => {
     if (name === "Shri Dhanvantri Vidyapeetam") {
-      return "/shri-dhanvantri-vidyapeetam";
+      return "https://www.dhanvantrieducations.com/";
     }
     return website;
   };
@@ -109,7 +109,7 @@ const SubsidiaryCard = ({
             href={websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center text-sm font-medium text-fixity-${color} hover:underline group-hover:text`}
+            className={`flex items-center text-sm font-medium text-fixity hover:underline group-hover:text`}
           >
             Visit Website <ExternalLink className="ml-1 h-4 w-4" />
           </a>

@@ -130,7 +130,7 @@ const subsidiaries = [
       "Conducted research leading to 4 patented herbal formulations",
       "Created innovative curriculum integrating traditional medicine with modern healthcare practices"
     ],
-    website: "#",
+    website: "https://www.dhanvantrieducations.com/",
     logo: "/images/shri-danvantri.jpeg"
   }
 ];
@@ -155,7 +155,7 @@ const Subsidiaries = () => {
   // Get website URL for subsidiary
   const getWebsiteUrl = (subsidiary: any) => {
     if (subsidiary.id === "shri-dhanvantri-vidyapeetam") {
-      return "/shri-dhanvantri-vidyapeetam";
+      return "https://www.dhanvantrieducations.com/";
     }
     return subsidiary.website;
   };
